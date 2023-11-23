@@ -1,16 +1,16 @@
-var unit = 'км';
-var count =5;
+var unit = prompt('Введіть одиницю вимірювання (км, г, кг)');
+var count = prompt('Введіть кількість:');
 
 switch (unit) {
     case 'км':
-        console.log(count * 1000 + 'м.');
+        alert(count * 1000 + 'м.');
         break;
     case 'г':
-        console.log(count * 60 + 'хв.');
+        alert(count * 60 + 'хв.');
         break;
     case 'кг':
-        console.log(count * 1000 + 'грм.');
+        alert(count * 1000 + 'грм.');
         break;
     default:
-        console.log('Приймаються тількі кілометри,години,та кілограми у вугляді км/г/кг')
+        alert('Невірна одиниця вимірювання. Введіть км, год або кг.')
 }
